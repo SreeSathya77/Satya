@@ -32,7 +32,7 @@ System.out.println("HIGHEST Opportunity Amount: " + HSOptAmount.getamount());
 private static Opportunity findHSOptAmount(List<Opportunity> opportunities)
 {
 	if (opportunities.isEmpty())
-	{System.out.println("list is empty....");}
+	{throw new IllegalArgumentException("list is empty....");}
 	Opportunity HSOptAmount = opportunities.get(0);
 	for (Opportunity opt : opportunities)
 	{
